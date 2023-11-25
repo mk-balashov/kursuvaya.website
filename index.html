@@ -21,7 +21,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2 offset-md-1">
-                    <a href="#" class="header_logo"> <img src="img/logoWhite.svg" alt="logo"></img></a>
+                    <a href="#" class="header_logo"> <img src="img/logoWhite.svg" alt="logo" class="header_logo_settings"></img></a>
                 </div>
                 <div class="col-md-1 offset-md-1">
                     <div class="header_btn">
@@ -82,7 +82,7 @@
                             </div>
                             <div class="promo_buble_2">
                                 <div class="promo_buble_1_header">
-                                    30
+                                    30+
                                 </div>
                                 <div class="promo_buble_1_subheader">
                                     Крупных проектов для<br>ведущих компаний из<br>России и Европы
@@ -422,7 +422,7 @@
             <div class="row">
                 <div class="news_header">Статьи и новости</div>
                 <div class="col-md-3">
-                    <div class="news_card">
+                    <div class="news_card" data-tilt data-tilt-scale="1.1">
                         <div class="news_card_photo news_card_photo_1">
 
                         </div>
@@ -435,8 +435,8 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="news_card">
-                        <div class="news_card_photo news_card_photo_2">
+                    <div class="news_card" data-tilt data-tilt-scale="1.1">
+                        <div class="news_card_photo news_card_photo_2" >
 
                         </div>
                         <div class="news_card_header">
@@ -448,7 +448,7 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="news_card">
+                    <div class="news_card" data-tilt data-tilt-scale="1.1">
                         <div class="news_card_photo news_card_photo_3">
 
                         </div>
@@ -460,7 +460,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3" data-tilt data-tilt-scale="1.1">
                     <div class="news_card">
                         <div class="news_card_photo news_card_photo_4">
 
@@ -543,7 +543,8 @@
             </div>
         </div>
     </section>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 3,

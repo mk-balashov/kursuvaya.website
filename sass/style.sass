@@ -9,8 +9,13 @@ body
     height: 70px
     margin-top: 31px
     &_logo
+        padding-top: 91px
         height: 20px
+        &_settings
+            height: 20px
     &_btn
+        position: absolute
+        top:12%
         color: #FFF
         font-family: Inter
         font-size: 13.7px
@@ -27,6 +32,9 @@ body
         font-style: normal
         font-weight: 600
         background-color: #09082800
+        transition: 0.2s linear
+        &:hover
+            border: 1px solid #ffffff
 .promo
     height: 600px
     &_back
@@ -74,6 +82,7 @@ body
                 line-height: 55px
                 letter-spacing: -1.5px
             &_submain
+                padding-top: 20px
                 color: #FFF
                 font-family: Inter
                 font-size: 15.1px
@@ -92,8 +101,11 @@ body
                 font-size: 13.7px
                 font-style: normal
                 font-weight: 600
-                background-color: #09082800
-
+                background: linear-gradient(270deg, #FE484C 0%, #E37337 33.33%, #e37c37 66.67%, #FE484C 100%)
+                transition: 0.2s linear
+                &:hover
+                    border: 1px solid #fdfeff
+                    
             &_2
                 margin-left: 15px
                 width: 170px
@@ -106,6 +118,9 @@ body
                 font-style: normal
                 font-weight: 600
                 background-color: #09082800
+                transition: 0.2s linear
+                &:hover
+                    border: 1px solid #ffffff
 
             
             &_3
@@ -120,6 +135,9 @@ body
                 font-style: normal
                 font-weight: 600
                 background-color: #09082800
+                transition: 0.2s linear
+                &:hover
+                    border: 1px solid #ffffff
     &_buble
         padding-top: 150px
         &_1
@@ -134,7 +152,7 @@ body
             border: 1px solid #FFF
             color: white
             &_header
-                padding-top: 10px
+                padding-top: 20px
                 text-align: center
                 color: #FFF
                 font-family: Inter
@@ -143,6 +161,7 @@ body
                 font-weight: 600
                 line-height: 40px
             &_subheader
+                margin-top: 5px
                 text-align: center
                 color: #FFF
                 font-family: Inter
@@ -264,6 +283,8 @@ body
                 padding: 8px 22px
                 border-radius: 30px
                 width: 100%
+                &:hover
+                    border: 1px solid #fdfeff
 
             &_header
                 margin-top: 15px
@@ -369,6 +390,8 @@ body
         background-color: #12391200
         border: 1px solid #FE484C
         margin-bottom: 40px
+        &:hover
+            border: 1px solid #fdfeff
     &_item
         text-align: center
         flex-direction: column
@@ -379,7 +402,10 @@ body
         height: 260px
         margin-bottom: 19px
         &_play
+            transition: 0.2s linear
             margin-top: 35%
+            &:hover
+                transform: scale(1.3)
         &_1
             background: url('../img/cards/VideoCard1.png') center (center/cover) no-repeat
         &_2
@@ -441,6 +467,10 @@ body
         font-style: normal
         font-weight: 600
         line-height: 21.7px
+        transition: 0.2s linear
+        &:hover
+            border: 1px solid #ffffff
+                
 
     &_header
         text-align: center
