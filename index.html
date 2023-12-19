@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Varvision</title>
-    <link rel="icon" href="icons/favicon.png" type="image/png">
+    <link rel="icon" href="https://static.tildacdn.com/tild6632-3239-4036-a437-363435643432/favikon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css" />
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
@@ -18,32 +21,58 @@
 
   <body>
     <div class="header">
+        <div class="visible">
+            <div class="hamburger" id="hamburger">
+                <span class="visible"></span>
+                <span class="visible"></span>
+                <span class="visible"></span>
+            </div>
+        </div>
+        <div class="menu" id="menu">
+            <div class="menu_close" id="closeMenu">
+                &times;
+            </div>
+            <div class="menu_list">
+                <a href="#" class="menu_logo"> <img src="img/logoWhite.svg" alt="logo" class="header_logo_settings"></img></a>
+                <div class="menu_btn">О студии</div>
+                <div class="menu_btn">Виртуальные тренажеры</div>
+                <div class="menu_btn">Дополненная реальность</div>
+                <div class="menu_btn">Виртуальные шоурумы</div>
+                <div class="menu_btn">Game Development</div>
+                <div class="menu_btn">3D-моделирование</div>
+                <div class="menu_btn">Блог</div>
+                <div class="menu_btn">Контакты</div>
+                <div class="menu_project">
+                    <button class="menu_project_btn">Обсудить проект</button>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-2 offset-md-1">
                     <a href="#" class="header_logo"> <img src="img/logoWhite.svg" alt="logo" class="header_logo_settings"></img></a>
                 </div>
-                <div class="col-md-1 offset-md-1">
+                <div class="col-md-1 offset-md-1 hidden">
                     <div class="header_btn">
                         О студии
                     </div>
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-1 hidden">
                     <div class="header_btn">
                         Услуги
                     </div>
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-1 hidden">
                     <div class="header_btn">
                         Блог
                     </div>
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-1 hidden">
                     <div class="header_btn">
                         Контакты
                     </div>
                 </div>
-                <div class="col-md-2 offset-md-1">
+                <div class="col-md-2 offset-md-1 hidden">
                     <button class="header_project">Ваш проект</button>
                 </div>
             </div>
@@ -146,164 +175,207 @@
             </div>
         </div>
     </section>
-
-    <section class="corusel">
-        <div class="swiper mySwiper container">
-            
-            <div class="swiper-wrapper corusel_content">
-                <div class="swiper-slide corusel_card">
-                    <div class="corusel_card_content">
-                        <div class="corusel_card_content_image">
-                            <img src ="img/cards/card1.png" alt="img1" class="corusel_card_content_image_img"/>
-                        </div>
-                        <div class="corusel_card_content_header">
-                            Обучающие виртуальные тренажеры
-                        </div>
-                        <div class="corusel_card_content_subheader">
-                            Моделируют и отрабатывают учебные тренировки и опасные<br>чрезвычайные ситуации под наблюдением
-                        </div>
-                        <div class="corusel_card_content_btn">
-                            <button class="corusel_card_content_button">Узнать подбробнее</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide corusel_card">
-                    <div class="corusel_card_content">
-                        <div class="corusel_card_content_image">
-                            <img src ="img/cards/card2.png" alt="img1" class="corusel_card_content_image_img"/>
-                        </div>
-                        <div class="corusel_card_content_header">
-                            Дополненная реальность
-                        </div>
-                        <div class="corusel_card_content_subheader">
-                            Через мобильные устройства дополняет реальный мир<br>цифровыми элементами и визуальной информацией
-                        </div>
-                        <div class="corusel_card_content_btn">
-                            <button class="corusel_card_content_button">Узнать подбробнее</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide corusel_card">
-                    <div class="corusel_card_content">
-                        <div class="corusel_card_content_image">
-                            <img src ="img/cards/card3.png" alt="img1" class="corusel_card_content_image_img"/>
-                        </div>
-                        <div class="corusel_card_content_header">
-                            Виртуальные шоурумы
-                        </div>
-                        <div class="corusel_card_content_subheader">
-                            Демонстрируют любые объекты в пространстве, а также<br>отображают их характеристики в режиме реального времени
-                        </div>
-                        <div class="corusel_card_content_btn">
-                            <button class="corusel_card_content_button">Узнать подбробнее</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide corusel_card">
-                    <div class="corusel_card_content">
-                        <div class="corusel_card_content_image">
-                            <img src ="img/cards/card4.png" alt="img1" class="corusel_card_content_image_img"/>
-                        </div>
-                        <div class="corusel_card_content_header">
-                            Game Development
-                        </div>
-                        <div class="corusel_card_content_subheader">
-                            МПогружает в мир игр любых жанров в 2D, 3D графике с<br>захватывающим геймплеем и адаптированной механикой
-                        </div>
-                        <div class="corusel_card_content_btn">
-                            <button class="corusel_card_content_button">Узнать подбробнее</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide corusel_card">
-                    <div class="corusel_card_content">
-                        <div class="corusel_card_content_image">
-                            <img src ="img/cards/card5.png" alt="img1" class="corusel_card_content_image_img"/>
-                        </div>
-                        <div class="corusel_card_content_header">
-                            3D-моделирование3D-моделирование
-                        </div>
-                        <div class="corusel_card_content_subheader">
-                            Позволяет создавать высококачественные копии любых<br>трехмерных объектов, передавая их форму, размер и текстуру
-                        </div>
-                        <div class="corusel_card_content_btn">
-                            <button class="corusel_card_content_button">Узнать подбробнее</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide corusel_card">
-                    <div class="corusel_card_content">
-                        <div class="corusel_card_content_image">
-                            <img src ="img/cards/card6.png" alt="img1" class="corusel_card_content_image_img"/>
-                        </div>
-                        <div class="corusel_card_content_header">
-                            Видео 360°
-                        </div>
-                        <div class="corusel_card_content_subheader">
-                            Погружают пользователя в сюжет, где зритель может сам<br>управлять ракурсом просмотра на любых устройствах
-                        </div>
-                        <div class="corusel_card_content_btn">
-                            <button class="corusel_card_content_button">Узнать подбробнее</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide corusel_card">
-                    <div class="corusel_card_content">
-                        <div class="corusel_card_content_image">
-                            <img src ="img/cards/card7.png" alt="img1" class="corusel_card_content_image_img"/>
-                        </div>
-                        <div class="corusel_card_content_header">
-                            Цифровые двойники
-                        </div>
-                        <div class="corusel_card_content_subheader">
-                            Позволяют прогнозировать поведение и ставить виртуальные<br>эксперименты с минимальными рисками для бизнеса
-                        </div>
-                        <div class="corusel_card_content_btn">
-                            <button class="corusel_card_content_button">Узнать подбробнее</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide corusel_card">
-                    <div class="corusel_card_content">
-                        <div class="corusel_card_content_image">
-                            <img src ="img/cards/card1.png" alt="img1" class="corusel_card_content_image_img"/>
-                        </div>
-                        <div class="corusel_card_content_header">
-                            Обучающие виртуальные тренажеры
-                        </div>
-                        <div class="corusel_card_content_subheader">
-                            Моделируют и отрабатывают учебные тренировки и опасные<br>чрезвычайные ситуации под наблюдением
-                        </div>
-                        <div class="corusel_card_content_btn">
-                            <button class="corusel_card_content_button">Узнать подбробнее</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide corusel_card">
-                    <div class="corusel_card_content">
-                        <div class="corusel_card_content_image">
-                            <img src ="img/cards/card2.png" alt="img1" class="corusel_card_content_image_img"/>
-                        </div>
-                        <div class="corusel_card_content_header">
-                            Обучающие виртуальные тренажеры
-                        </div>
-                        <div class="corusel_card_content_subheader">
-                            Моделируют и отрабатывают учебные тренировки и опасные<br>чрезвычайные ситуации под наблюдением
-                        </div>
-                        <div class="corusel_card_content_btn">
-                            <button class="corusel_card_content_button">Узнать подбробнее</button>
-                        </div>
-                    </div>
+    <section class="varvision">
+        <div class="container">
+            <div class="varvision_main">
+                <div class="varvision_main_glass">
+                    <div class="varvision_main_glass_header"> Создаем виртуальный мир</div>
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div> 
+            <div class="varvision_header">
+                Мы разработаем индивидуальный проект виртуальной и дополненной<br>реальности, трехмерного моделирования для ваших бизнес-задач.
+            </div>
+            <div class="varvision_btns">
+                <button class="varvision_btn">
+                    <div class="varvision_btn_header">Заказать проект</div>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="mySlider" class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div class="swiper-slide corusel_card">
+                        <div class="corusel_card_content">
+                            <div class="corusel_card_content_image">
+                                <img src ="img/cards/card1.png" alt="img1" class="corusel_card_content_image_img"/>
+                            </div>
+                            <div class="corusel_card_content_header">
+                                Обучающие виртуальные тренажеры
+                            </div>
+                            <div class="corusel_card_content_subheader">
+                                Моделируют и отрабатывают учебные тренировки и опасные<br>чрезвычайные ситуации под наблюдением
+                            </div>
+                            <div class="corusel_card_content_btn">
+                                <button class="corusel_card_content_button">Узнать подбробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="swiper-slide corusel_card">
+                        <div class="corusel_card_content">
+                            <div class="corusel_card_content_image">
+                                <img src ="img/cards/card2.png" alt="img1" class="corusel_card_content_image_img"/>
+                            </div>
+                            <div class="corusel_card_content_header">
+                                Дополненная реальность
+                            </div>
+                            <div class="corusel_card_content_subheader">
+                                Через мобильные устройства дополняет реальный мир<br>цифровыми элементами и визуальной информацией
+                            </div>
+                            <div class="corusel_card_content_btn">
+                                <button class="corusel_card_content_button">Узнать подбробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="swiper-slide corusel_card">
+                        <div class="corusel_card_content">
+                            <div class="corusel_card_content_image">
+                                <img src ="img/cards/card3.png" alt="img1" class="corusel_card_content_image_img"/>
+                            </div>
+                            <div class="corusel_card_content_header">
+                                Виртуальные шоурумы
+                            </div>
+                            <div class="corusel_card_content_subheader">
+                                Демонстрируют любые объекты в пространстве, а также<br>отображают их характеристики в режиме реального времени
+                            </div>
+                            <div class="corusel_card_content_btn">
+                                <button class="corusel_card_content_button">Узнать подбробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="swiper-slide corusel_card">
+                        <div class="corusel_card_content">
+                            <div class="corusel_card_content_image">
+                                <img src ="img/cards/card4.png" alt="img1" class="corusel_card_content_image_img"/>
+                            </div>
+                            <div class="corusel_card_content_header">
+                                Game Development
+                            </div>
+                            <div class="corusel_card_content_subheader">
+                                МПогружает в мир игр любых жанров в 2D, 3D графике с<br>захватывающим геймплеем и адаптированной механикой
+                            </div>
+                            <div class="corusel_card_content_btn">
+                                <button class="corusel_card_content_button">Узнать подбробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="swiper-slide corusel_card">
+                        <div class="corusel_card_content">
+                            <div class="corusel_card_content_image">
+                                <img src ="img/cards/card5.png" alt="img1" class="corusel_card_content_image_img"/>
+                            </div>
+                            <div class="corusel_card_content_header">
+                                3D-моделирование3D-моделирование
+                            </div>
+                            <div class="corusel_card_content_subheader">
+                                Позволяет создавать высококачественные копии любых<br>трехмерных объектов, передавая их форму, размер и текстуру
+                            </div>
+                            <div class="corusel_card_content_btn">
+                                <button class="corusel_card_content_button">Узнать подбробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="swiper-slide corusel_card">
+                        <div class="corusel_card_content">
+                            <div class="corusel_card_content_image">
+                                <img src ="img/cards/card6.png" alt="img1" class="corusel_card_content_image_img"/>
+                            </div>
+                            <div class="corusel_card_content_header">
+                                Видео 360°
+                            </div>
+                            <div class="corusel_card_content_subheader">
+                                Погружают пользователя в сюжет, где зритель может сам<br>управлять ракурсом просмотра на любых устройствах
+                            </div>
+                            <div class="corusel_card_content_btn">
+                                <button class="corusel_card_content_button">Узнать подбробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="swiper-slide corusel_card">
+                        <div class="corusel_card_content">
+                            <div class="corusel_card_content_image">
+                                <img src ="img/cards/card7.png" alt="img1" class="corusel_card_content_image_img"/>
+                            </div>
+                            <div class="corusel_card_content_header">
+                                Цифровые двойники
+                            </div>
+                            <div class="corusel_card_content_subheader">
+                                Позволяют прогнозировать поведение и ставить виртуальные<br>эксперименты с минимальными рисками для бизнеса
+                            </div>
+                            <div class="corusel_card_content_btn">
+                                <button class="corusel_card_content_button">Узнать подбробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div class="swiper-slide corusel_card">
+                        <div class="corusel_card_content">
+                            <div class="corusel_card_content_image">
+                                <img src ="img/cards/card1.png" alt="img1" class="corusel_card_content_image_img"/>
+                            </div>
+                            <div class="corusel_card_content_header">
+                                Обучающие виртуальные тренажеры
+                            </div>
+                            <div class="corusel_card_content_subheader">
+                                Моделируют и отрабатывают учебные тренировки и опасные<br>чрезвычайные ситуации под наблюдением
+                            </div>
+                            <div class="corusel_card_content_btn">
+                                <button class="corusel_card_content_button">Узнать подбробнее</button>
+                            </div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide"><div class="swiper-slide corusel_card">
+                    <div class="corusel_card_content">
+                        <div class="corusel_card_content_image">
+                            <img src ="img/cards/card2.png" alt="img1" class="corusel_card_content_image_img"/>
+                        </div>
+                        <div class="corusel_card_content_header">
+                            Обучающие виртуальные тренажеры
+                        </div>
+                        <div class="corusel_card_content_subheader">
+                            Моделируют и отрабатывают учебные тренировки и опасные<br>чрезвычайные ситуации под наблюдением
+                        </div>
+                        <div class="corusel_card_content_btn">
+                            <button class="corusel_card_content_button">Узнать подбробнее</button>
+                        </div>
+                    </div>
+                </li>
+              </ul>
         </div>
     </section>
 
     <section class="responsibilitie">
         <div class="container">
+            <div class="responsibilitie_title">
+                <div class="row">
+                    <div class="col-md-6 offset-md-1">
+                        <div class="responsibilitie_title_question">Вы ещё не готовы<br>заказать проект?</div>
+                        <div class="responsibilitie_title_subquestion">Наши эксперты детально изучат задачи вашего бизнеса,<br>протестируют гипотезы и предложат варианты решений.</div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="responsibilitie_title_solution">Мы можем предложить<br>вам предпроектное<br>исследование!</div>
+                        <div class="responsibilitie_title_btns">
+                            <button class="responsibilitie_title_btn">Узнать подбробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="responsibilitie_mirror">
                 <div class="row">
                     <div class="col-md-3">
@@ -405,8 +477,10 @@
     </section>
     <section class="technologies">
         <div class="container">
-            <div class="technologies_header">Технологии</div>
+            <div class="technologies_title">
+                <div class="technologies_header">Технологии</div>
             <div class="technologies_subheader">Универсальные инструменты для использования<br>виртуальной реальности с любым вашим оборудованием.</div>
+            </div>
         </div>
             <div class="technologies_items">
                 <div class="technologies_items_play"><img src="img/tech/steam.png" alt="steam"></div>
@@ -479,14 +553,48 @@
             </div>
         </div>
     </section>
-    <canvas id="noisy-canvas"></canvas>
+    <section class="form">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 offset-md-1">
+                    <div class="form_title">Бесплатная консультация<br>по вашему проекту</div>
+                    <div class="form_subtitle">Заполните форму, и специалисты нашей компании<br>свяжутся с Вами для консультации по интересующим<br>вопросам и расскажут, как начать работу.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-1">
+                    <div class="form_leftside">
+                        <form>
+                            <input type="text" class="form_name" placeholder="Имя">
+                            <input type="text" class="form_number" placeholder="+7 (999) 999-99-99">
+                            <input type="text" class="form_gmail" placeholder="Email">
+                            <input type="text" class="form_companyname" placeholder="Название компании">
+                            <input type="text" class="form_info" placeholder="Дополненная информация">
+                        </form>
+                        <div class="form_btns">
+                            <button class="form_btn">Отправить</button>
+                        </div>
+                        <div class="form_subbtn">Нажимая на кнопку, Вы подтверждаете, что ознакомились с Политикой конфиденциальности<br>и согласны на обработку персональных данных.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="form_glass">
+                        <div class="form_glass_title">Или свяжитесь с нами<br>самостоятельно:</div>
+                        <div class="form_glass_number">+7 812 702 52 59</div>
+                        <div class="form_glass_gmail">dev@varvsn.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="footer">
         <div class="container">
             <div class="row ">
                 <div class="col-md-4 offset-md-1">
                     <div class="info_card">
                         <div class="info_card_logo">
-
+                            Varvision
                         </div>
                         <div class="info_card_descr">
                             Мы специализируемся на реализации полного цикла<br>услуг в области виртуальной и дополненной<br>реальности, трехмерной графики.
@@ -497,7 +605,7 @@
         </div>
         <div class="container">
             <div class="row ">
-                <div class="col-md-2 offset-md-1">
+                <div class="col-md-2 offset-md-1 col-xs-1">
                     <div class="office_card">
                         <div class="office_card_city">
                             Санкт-Петербург
@@ -617,28 +725,13 @@
             </div>
         </div>
     </section>
+</body>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          slidesPerView: 3,
-          spaceBetween: 30,
-          slidesPerGroup: 3,
-          loop: true,
-          loopFillGroupWithBlank: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-    </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/cb40589f77.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+    <script src="js/script.js"></script>
 </html>

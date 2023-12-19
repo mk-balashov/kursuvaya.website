@@ -1,17 +1,27 @@
-'use strict';
+document.addEventListener( 'DOMContentLoaded', function() {
+  const mySlider = new Splide("#mySlider", {
+    perPage: 3,
+    gap: "10px",
+    pagination: false,
+    type   : 'loop',
+    breakpoints: {
+      1024: {
+        perPage: 1,
+      }
+    }
+  })
+  
+  mySlider.mount();
+  
+});
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+document.getElementById('hamburger').addEventListener('click', function () {
+  var menu = document.getElementById('menu');
+  menu.classList.toggle('hidden');
+  menu.classList.toggle('visible');
+});
+document.getElementById('closeMenu').addEventListener('click', function () {
+  var menu = document.getElementById('menu');
+  menu.classList.add('hidden');
+  menu.classList.remove('visible');
 });
